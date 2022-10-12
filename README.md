@@ -1,9 +1,12 @@
 # Blog Theme
 
+# [Demo](https://musabalki.com/blog-theme/)
+
 ## Topics
 - React
-- Tailwind
+- Tailwind CSS
 - React Icons
+- Context API
 
 <img src="screen.png" />
 

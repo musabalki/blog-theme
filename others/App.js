@@ -4,7 +4,7 @@ const App = () => {
         <div className="container mx-auto">
             <div className="grid grid-cols-2">
                 <div className="relative ">
-                    <img src="img/img-2.jpg" className="w-full h-[500px] rounded-lg object-cover" alt="" />
+                    <img src="" className="w-full h-[500px] rounded-lg object-cover" alt="" />
                     <div className="img-a">
                         <a href="" className="text-white absolute bottom-0 left-0 z-20 w-full p-7 text-4xl font-semibold">
                             Lorem Ipsum Dolot Sıt Amet
@@ -16,7 +16,7 @@ const App = () => {
                         </a>
 
                     </div>
-                    <a href="" className="bg-rose-600				rounded  text-white py-1 px-4 absolute top-7 left-7">REACT</a>
+                    <a href="" className="bg-rose-600 rounded text-white py-1 px-4 absolute top-7 left-7">REACT</a>
                 </div>
             </div>
         </div>

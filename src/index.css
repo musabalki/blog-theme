@@ -20,11 +20,12 @@
     width: 100%;
   }
 
-  .transition-bg  {
+  .transition-bg {
     transition: .5s all;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
     -ms-transition: .5s all;
     -o-transition: .5s all;
-}
+  }
+
 }
