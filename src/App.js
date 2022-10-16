@@ -1,27 +1,27 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import Header from "./components/Header"
-import Instagram from './components/Instagram';
-import MainBlog from './components/MainBlog';
-import MainBlogFilter from './components/MainBlogFilter';
-import Subscribe from './components/Subscribe';
-import TobList from './components/TobList';
 import Footer from './components/Footer'
 import { ThemeContext } from './context/ThemeContext';
+import { Routes, useRoutes,Route } from "react-router-dom";
+import Home from "./pages/Home"
+import Blog from "./pages/Blog"
+import routes from './routes';
 
+import HomeLayout from "./pages/HomeLayout"
 
 function App() {
   const { theme, setTheme, changeTheme } = useContext(ThemeContext)
+  return useRoutes(routes);
+
   return (
-    <div className={` ${theme === "dark" ? 'bg-black	' : 'bg-gray-100'} transition-bg`}>
+    <div className={` ${theme === "dark" ? 'bg-stone-800 dark-bg' : 'bg-gray-100'} transition-bg`}>
       <Header />
-      <TobList />
-      <MainBlog />
-      <Subscribe />
-      <MainBlogFilter />
-      <Instagram />
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes> */}
       <Footer />
     </div>
-
   );
 }
 

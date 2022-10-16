@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
         setCount(!count)
     }
     return (
-        <section className={`border-b-2 transition-bg  ${theme === 'dark' ? 'bg-black  border-white' : 'bg-white border-gray-200'}`}>
+        <section className={`border-b-2 transition-bg  ${theme === 'dark' ? 'bg-stone-900	 border-white' : 'bg-white border-gray-200'}`}>
             <div className="p-4 flex lg:flex-row flex-col justify-between container mx-auto relative">
                 <div className="flex items-center justify-between ">
                     <a href="" className={`font-semibold text-3xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>MBLogo</a>
@@ -18,11 +19,11 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={`${count ? 'opacity-100' : 'opacity-0'}  py-2 lg:border-0 border border-gray-300 lg:opacity-100 absolute w-full top-[4.6rem] z-20  left-0 lg:relative lg:w-auto lg:top-0 lg:z-30   lg:flex lg:flex-row flex-col items-center justify-center lg:space-x-6  ${theme === 'dark' ? 'text-black lg:text-white border-white bg-white lg:bg-inherit' : 'text-black bg-white lg:bg-inherit border-gray-200'}`}>
-                    <a href="#" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Home</a>
-                    <a href="#" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Blog</a>
-                    <a href="#" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Categories</a>
-                    <a href="#" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">About</a>
-                    <a href="#" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Contact</a>
+                    <Link to="/" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Home</Link>
+                    <Link to="/blog" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Blog</Link>
+                    <Link to="/categories" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Categories</Link>
+                    <Link to="/about" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">About</Link>
+                    <Link to="/contact" className="h-full flex items-center font-medium text-lg py-2 px-4 lg:px-0 lg:py-5">Contact</Link>
                     <button onClick={() => changeTheme()} className={`font-medium justify-end ml-4 lg:ml-0 px-2 py-1 rounded ${theme === 'dark' ? 'flex  bg-white text-black border-gray-400 border-2 lg:border-0' : 'flex bg-black text-white font-medium'}`}>
                         <svg className='mr-2' fill={theme === 'dark' ? '#000' : '#fff'} viewBox="0 0 24 24" width="24" height="24" preserveAspectRatio="xMidYMid meet" focusable="false">
                             <g className="style-scope yt-icon">
