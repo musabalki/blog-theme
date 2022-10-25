@@ -10,10 +10,10 @@ const Header = () => {
         setCount(!count)
     }
     return (
-        <section className={`border-b-2 transition-bg  ${theme === 'dark' ? 'bg-stone-900	 border-white' : 'bg-white border-gray-200'}`}>
-            <div className="p-4 flex lg:flex-row flex-col justify-between container mx-auto relative">
+        <section className={`border-b-2 transition-bg  ${theme === 'dark' ? 'bg-stone-800	 border-white' : 'bg-white border-gray-200'}`}>
+            <div className="py-4 px-4 lg:px-0 flex lg:flex-row flex-col justify-between container mx-auto relative">
                 <div className="flex items-center justify-between ">
-                    <a href="" className={`font-semibold text-3xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>MBLogo</a>
+                    <Link to="/" className={`font-semibold text-3xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>MBLogo</Link>
                     <div className="flex items-center lg:hidden hover:cursor-pointer" onClick={() => toggleMenu()} >
                         <svg fill={`${theme === 'dark' ? '#fff' : '#000'} `} xmlns="http://www.w3.org/2000/svg" height="40" width="40"><path d="M4.542 30.75v-3.667h30.916v3.667Zm0-8.917v-3.666h30.916v3.666Zm0-8.916V9.25h30.916v3.667Z" /></svg>
                     </div>

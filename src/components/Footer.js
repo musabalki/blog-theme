@@ -6,7 +6,7 @@ const Footer = () => {
     const {theme,setTheme,changeTheme} = useContext(ThemeContext)
 
     return (
-        <section className={`py-10 mt-10 border-t-2 p-4 ${theme === 'dark' ? 'bg-stone-900 border-white' : 'bg-white border-gray-200'}`}>
+        <section className={`py-10 mt-10 border-t-2 p-4 ${theme === 'dark' ? 'bg-stone-800 border-white' : 'bg-white border-gray-200'}`}>
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3">
                     <div className={`font-semibold text-3xl md:text-left text-center ${theme === 'dark' ? 'text-white' : 'text-black'}`}>

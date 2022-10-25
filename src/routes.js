@@ -4,6 +4,9 @@ import HomeLayout from "./pages/HomeLayout"
 
 import Blog from "./pages/Blog"
 import Home from "./pages/Home"
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Categories from "./pages/Categories";
 
 const routes=[
     {
@@ -20,7 +23,7 @@ const routes=[
                 path:'blog',
                 element:<Blog/>
             },
-            /*{
+            {
                 path:'categories',
                 element:<Categories/>
             },
@@ -31,7 +34,7 @@ const routes=[
             {
                 path:'contact',
                 element:<Contact/>
-            }*/
+            }
         ]
     }
 ]

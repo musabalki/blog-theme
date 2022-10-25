@@ -8,7 +8,7 @@ function HomeLayout() {
     const { theme} = useContext(ThemeContext)
 
     return (
-        <div className={` ${theme === "dark" ? 'bg-stone-800 dark-bg' : 'bg-gray-100'} transition-bg`}>
+        <div className={` ${theme === "dark" ? 'bg-stone-700 dark-bg' : 'bg-gray-100'} transition-bg`}>
             <Header />
             <Outlet />
             <Footer />
