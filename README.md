@@ -1,6 +1,6 @@
 # Blog Theme
 
-# [Demo](https://musabalki.com/blog-theme/)
+# [Demo](https://blog-theme-hazel.vercel.app/)
 
 ## Topics
 - React
